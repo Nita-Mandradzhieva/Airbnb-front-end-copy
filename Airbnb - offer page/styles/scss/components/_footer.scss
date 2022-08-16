@@ -1,0 +1,129 @@
+footer {
+  background-color: #f7f7f7;
+  width: 100%;
+  border-top: 1px solid lightgray;
+
+  .countries-container {
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+
+    .heading-3 {
+      padding-bottom: 30px;
+      padding-top: 40px;
+    }
+
+    .options {
+      // border-bottom: 1px solid lightgray;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .country {
+        width: 284px;
+        height: 25px;
+        padding: 3px 3px;
+
+        a {
+          text-decoration: none;
+          color: rgb(138, 135, 135);
+        }
+      }
+    }
+  }
+
+  .airbnb {
+    font-size: small;
+    padding-bottom: 40px;
+    margin: 10px;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .support-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+
+    .support,
+    .community,
+    .hosts,
+    .airbnb {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          a {
+            text-decoration: none;
+            width: 284px;
+            height: 40px;
+            padding: 3px 3px;
+            color: black;
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+
+    .site-info-btn {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .common-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      padding: 0px 110px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .lang-btn {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .underline {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .icons-btn {
+        font-size: large;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .bgn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}

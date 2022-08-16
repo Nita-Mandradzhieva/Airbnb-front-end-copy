@@ -1,0 +1,105 @@
+@use "../abstracts/variables";
+
+header {
+    width: 100%;
+    margin: auto;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+   
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 85%;
+        margin: auto;
+
+        .img-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1;
+        }
+
+        .search-menu {
+            display: flex;
+            flex: 2;
+            justify-content: center;
+
+            .search-btn {
+                padding: 0px 10px;
+                border: 1px solid lightgray;
+                border-radius: 20px;
+                padding: 5px 10px;
+                display: flex;
+                gap: 95px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 2px 2px 2px rgb(179, 165, 165);
+                }
+
+                .fa-magnifying-glass{
+                    background-color: red;
+                    color: white;
+                    border-radius: 20px;
+                    padding: 9px 9px;
+                    font-size: small;
+                }
+            }
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            gap:20px;
+
+            .host {
+                &:hover {
+                        cursor: pointer;
+                        border-radius: 17px;
+                        padding: 7px 7px;
+                        background-color:  rgb(197, 185, 185);
+                        box-shadow: 2px 2px 2px rgb(179, 165, 165);
+                    }
+            }
+
+            .globe-btn {
+                &:hover {
+                    cursor: pointer;
+                    border: 1px solid lightgray;
+                    border-radius: 17px;
+                    padding: 7px 7px;
+                    background-color: rgb(197, 185, 185);
+                    box-shadow: 2px 2px 2px rgb(179, 165, 165);
+                }
+            }
+
+            .menu-btn{
+                border: 1px solid lightgray;
+                padding: 7px 7px;
+                border-radius: 20px;
+
+                &:hover {
+                        cursor: pointer;
+                        box-shadow: 2px 2px 2px rgb(179, 165, 165);
+
+                    }
+            }
+
+        }
+    }
+}

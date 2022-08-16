@@ -1,0 +1,979 @@
+header {
+  width: 100%;
+  margin: auto;
+  height: 70px;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+}
+header .header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 85%;
+  margin: auto;
+}
+header .header-container .img-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+header .header-container .search-menu {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+}
+header .header-container .search-menu .search-btn {
+  padding: 0px 10px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 95px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-container .search-menu .search-btn:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgb(179, 165, 165);
+}
+header .header-container .search-menu .search-btn .fa-magnifying-glass {
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  padding: 9px 9px;
+  font-size: small;
+}
+header .header-container .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+}
+header .header-container .menu .host:hover {
+  cursor: pointer;
+  border-radius: 17px;
+  padding: 7px 7px;
+  background-color: rgb(197, 185, 185);
+  box-shadow: 2px 2px 2px rgb(179, 165, 165);
+}
+header .header-container .menu .globe-btn:hover {
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 17px;
+  padding: 7px 7px;
+  background-color: rgb(197, 185, 185);
+  box-shadow: 2px 2px 2px rgb(179, 165, 165);
+}
+header .header-container .menu .menu-btn {
+  border: 1px solid lightgray;
+  padding: 7px 7px;
+  border-radius: 20px;
+}
+header .header-container .menu .menu-btn:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgb(179, 165, 165);
+}
+
+footer {
+  background-color: #f7f7f7;
+  width: 100%;
+  border-top: 1px solid lightgray;
+}
+footer .countries-container {
+  width: 85%;
+  margin: auto;
+  border-bottom: 1px solid lightgray;
+}
+footer .countries-container .heading-3 {
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+footer .countries-container .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+footer .countries-container .options .country {
+  width: 284px;
+  height: 25px;
+  padding: 3px 3px;
+}
+footer .countries-container .options .country a {
+  text-decoration: none;
+  color: rgb(138, 135, 135);
+}
+footer .airbnb {
+  font-size: small;
+  padding-bottom: 40px;
+  margin: 10px;
+}
+footer .airbnb:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer .support-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 85%;
+  margin: auto;
+  border-bottom: 1px solid lightgray;
+}
+footer .support-container .support ul,
+footer .support-container .community ul,
+footer .support-container .hosts ul,
+footer .support-container .airbnb ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .support-container .support ul li a,
+footer .support-container .community ul li a,
+footer .support-container .hosts ul li a,
+footer .support-container .airbnb ul li a {
+  text-decoration: none;
+  width: 284px;
+  height: 40px;
+  padding: 3px 3px;
+  color: black;
+  font-size: small;
+}
+footer .bottom-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+footer .bottom-container .site-info-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+footer .bottom-container .common-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0px 110px;
+}
+footer .bottom-container .common-container:hover {
+  cursor: pointer;
+}
+footer .bottom-container .common-container .lang-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+footer .bottom-container .common-container .underline:hover {
+  text-decoration: underline;
+}
+footer .bottom-container .common-container .icons-btn {
+  font-size: large;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .bottom-container .common-container .bgn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main {
+  margin-top: 70px;
+}
+main .name-and-review-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+}
+main .name-and-review-container .name-and-rate .name-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+main .name-and-review-container .name-and-rate .rate-container {
+  display: flex;
+  gap: 10px;
+}
+main .name-and-review-container .share-save-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+main .images-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main .images-container .main-img {
+  display: flex;
+  flex: 1;
+}
+main .images-container .main-img img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+main .images-container .secondary-images {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 5px;
+}
+main .images-container .secondary-images .secondary-img-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+}
+main .images-container .secondary-images .secondary-img-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+main .images-container .secondary-images .secondary-img-2 img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+main .left-and-right-sections {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+main .left-and-right-sections .section-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 2350px;
+  width: 40%;
+  flex-direction: row;
+}
+main .left-and-right-sections .section-right .card {
+  margin: 0 auto !important;
+  display: flex;
+  position: sticky !important;
+  top: 80px;
+  width: 70%;
+  margin: auto;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 2px rgb(179, 165, 165);
+  border-radius: 20px;
+  padding: 20px;
+}
+main .left-and-right-sections .section-right .card .container-box-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .left-and-right-sections .section-right .card .container-box-card .title-and-rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .title-and-rate .title {
+  display: flex;
+  flex-direction: row;
+}
+main .left-and-right-sections .section-right .card .container-box-card .title-and-rate .rate {
+  font-size: 15px;
+  color: gray;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .main-radious {
+  display: flex;
+  border: 1px solid lightgray;
+  flex-direction: column;
+  border-radius: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  height: 100%;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections .first-section {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-right: 1px solid lightgray;
+  padding: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections .first-section .check-in {
+  font-size: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections .first-section .add-date {
+  color: gray;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections .second-section {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections .second-section .checkout {
+  font-size: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .first-two-sections .second-section .add-date {
+  color: gray;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .third-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding: 10px 0px;
+  border-top: 1px solid lightgray;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .third-section .guests .guest {
+  font-size: 10px;
+  margin-left: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .third-section .guests .one-g {
+  margin-left: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .third-section .icon-arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .btn-check button {
+  background-color: red;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+main .left-and-right-sections .section-right .card .container-box-card .four-sections .btn-check button:hover {
+  cursor: pointer;
+}
+main .left-and-right-sections .section-right .card .container-box-card .flag-and-reporting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  padding-top: 30px;
+}
+main .left-and-right-sections .section-right .card .container-box-card .flag-and-reporting .icon-flag {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .left-and-right-sections .section-right .card .container-box-card .flag-and-reporting .icon-flag:hover {
+  cursor: pointer;
+}
+main .left-and-right-sections .section-right .card .container-box-card .flag-and-reporting div a {
+  color: gray;
+}
+main .left-and-right-sections .section-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .left-and-right-sections .section-left .haris-container {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+main .left-and-right-sections .section-left .haris-container .left-section {
+  display: flex;
+  width: 100%;
+}
+main .left-and-right-sections .section-left .haris-container .left-section .room-pics {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .left-and-right-sections .section-left .haris-container .left-section .room-pics .rooms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .left-and-right-sections .section-left .haris-container .left-section .room-pics .rooms-list .list {
+  display: flex;
+  gap: 10px;
+}
+main .left-and-right-sections .section-left .haris-container .left-section .room-pics .little-pic img {
+  border-radius: 100%;
+}
+main .left-and-right-sections .section-left .information {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main .left-and-right-sections .section-left .information .left-section {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main .left-and-right-sections .section-left .information .left-section .items {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+main .left-and-right-sections .section-left .information .left-section .items .one-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .left-and-right-sections .section-left .information .left-section .items .one-item .info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .left-and-right-sections .section-left .information .left-section .items .one-item .info-item .info-item-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .left-and-right-sections .section-left .information .left-section .items .one-item .info-item .info-item-2 .secondary-text {
+  color: rgb(131, 127, 127);
+}
+main .left-and-right-sections .section-left .aircover {
+  width: 85%;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .left-and-right-sections .section-left .aircover .left-section {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .left-and-right-sections .section-left .aircover .left-section .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+main .left-and-right-sections .section-left .section-with-text {
+  width: 85%;
+  margin: 0 auto;
+}
+main .left-and-right-sections .section-left .section-with-text .left-section {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-bottom: 40px;
+}
+main .left-and-right-sections .section-left .section-with-text .left-section .text {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+main .left-and-right-sections .section-left .where-sleep {
+  width: 85%;
+  margin: 0 auto;
+}
+main .left-and-right-sections .section-left .where-sleep .left-section {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .left-and-right-sections .section-left .where-sleep .left-section .name-container {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+main .left-and-right-sections .section-left .where-sleep .left-section .btns {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+main .left-and-right-sections .section-left .where-sleep .left-section .btns .btn-1 button,
+main .left-and-right-sections .section-left .where-sleep .left-section .btns .btn-2 button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 24px;
+  font-size: 14px;
+  gap: 10px;
+  min-width: 200px;
+}
+main .left-and-right-sections .section-left .place-offers-container {
+  width: 85%;
+  margin: 0 auto;
+}
+main .left-and-right-sections .section-left .place-offers-container .left-section {
+  border-top: 1px solid lightgray;
+  width: 100%;
+}
+main .left-and-right-sections .section-left .place-offers-container .heading-what-this-place-offers {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container {
+  display: flex;
+  gap: 70px;
+}
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .left-members,
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .right-members {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .left-members .member,
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .right-members .member {
+  display: flex;
+}
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .left-members .member .icon-and-name,
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .right-members .member .icon-and-name {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .left-members .btn button,
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .right-members .btn button {
+  background-color: white;
+  padding: 15px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 40px 0px;
+}
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .left-members .btn button:hover,
+main .left-and-right-sections .section-left .place-offers-container .bay-view-container .right-members .btn button:hover {
+  cursor: pointer;
+}
+main .left-and-right-sections .section-left .calendar {
+  width: 85%;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+}
+main .left-and-right-sections .section-left .calendar .left-section {
+  width: 100%;
+}
+main .left-and-right-sections .section-left .calendar .left-section .title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 10px;
+}
+main .left-and-right-sections .section-left .calendar .left-section .title .second-name {
+  color: gray;
+}
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-1,
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-2 {
+  text-align: center;
+}
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-1 table,
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-2 table {
+  border-collapse: collapse;
+  text-align: center;
+}
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-1 th,
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-1 td,
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-2 th,
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-2 td {
+  padding: 12px;
+  font-size: 12px;
+  color: gray;
+}
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-1 .strike,
+main .left-and-right-sections .section-left .calendar .left-section .table-calendar .table-calendar-2 .strike {
+  text-decoration: line-through;
+  color: rgb(125, 117, 117);
+}
+main .left-and-right-sections .section-left .calendar .left-section .icon-and-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  color: black;
+}
+main .left-and-right-sections .section-left .calendar .left-section .icon-and-dates .clear-dates a {
+  color: black;
+}
+main .comments {
+  width: 85%;
+  margin: auto;
+  border-top: 1px solid lightgray;
+}
+main .comments .heading-with-star h2 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+main .comments .rating-box {
+  display: flex;
+  justify-content: flex-start;
+}
+main .comments .left-rating-box,
+main .comments .right-rating-box {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+main .comments .left-rating-box .rating-box,
+main .comments .right-rating-box .rating-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+main .comments .left-rating-box .rating-box .rating,
+main .comments .right-rating-box .rating-box .rating {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+}
+main .comments .left-rating-box .rating-box .rating .rating-bar-box,
+main .comments .right-rating-box .rating-box .rating .rating-bar-box {
+  width: 120px;
+  border: 1px solid lightgray;
+  height: 5px;
+  border-radius: 40px;
+  background-color: lightgray;
+}
+main .people-comments {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  width: 85%;
+  margin: auto;
+  padding-top: 20px;
+}
+main .people-comments .peoples {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  gap: 160px;
+}
+main .people-comments .peoples .left-peoples,
+main .people-comments .peoples .right-peoples {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+main .people-comments .peoples .one-person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 460px;
+}
+main .people-comments .peoples .one-person .img-and-name {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+main .people-comments .peoples .one-person .name-person .date {
+  color: rgb(151, 147, 147);
+}
+main .people-comments .peoples .one-person .img-person img {
+  border-radius: 100%;
+  flex-wrap: wrap;
+}
+main .people-comments .peoples .one-person .fa-chevron-right {
+  padding: 0px 7px;
+  font-size: small;
+}
+main .people-comments .btn-people button {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+  margin: 40px 0px;
+}
+main .people-comments .btn-people button:hover {
+  cursor: pointer;
+}
+main .map {
+  width: 85%;
+  margin: auto;
+  border-top: 1px solid lightgray;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main .map h3 {
+  font-size: 15px;
+}
+main .map p {
+  margin: 24px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .map a {
+  color: black;
+}
+main .map .map-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+main .map .fa-chevron-right {
+  font-size: small;
+  padding: 0px 7px;
+}
+main .hosted-by-haris {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid lightgray;
+}
+main .hosted-by-haris .img-info-host {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+main .hosted-by-haris .img-info-host .host-img img {
+  border-radius: 100%;
+}
+main .hosted-by-haris .info-host {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  padding-left: 15px;
+  justify-content: center;
+}
+main .info-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  gap: 100px;
+}
+main .info-container .info-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+  max-width: 460px;
+  min-width: 350px;
+}
+main .info-container .info-1 .reviews-and-icons {
+  display: flex;
+  gap: 6px;
+}
+main .info-container .info-1 .text-2 .heading-1,
+main .info-container .info-1 .text-3 .heading-1 {
+  display: flex;
+  margin: 15px 0px;
+}
+main .info-container .info-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 350px;
+}
+main .info-container .info-2 .btn button {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: medium;
+  border: 1px solid black;
+}
+main .info-container .info-2 .btn button:hover {
+  cursor: pointer;
+}
+main .info-container .info-2 .to-protect {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+main .info-container .info-2 .to-protect .fa-shield {
+  font-size: 20px;
+}
+main .info-container .info-2 .to-protect p {
+  max-width: 230px;
+  font-size: 10px;
+}
+main .things-to-know {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  flex-direction: column;
+  gap: 30px;
+  border-top: 1px solid lightgray;
+  gap: 40px;
+}
+main .things-to-know .title {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+main .things-to-know .common-rules {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-bottom: 48px;
+}
+main .things-to-know .house-rules,
+main .things-to-know .health-and-safety,
+main .things-to-know .cancellation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 14px;
+  flex: 1;
+}
+main .things-to-know .house-rules a,
+main .things-to-know .health-and-safety a,
+main .things-to-know .cancellation a {
+  color: black;
+  font-size: 16px;
+}
+main .things-to-know .house-rules .fa-chevron-right,
+main .things-to-know .health-and-safety .fa-chevron-right,
+main .things-to-know .cancellation .fa-chevron-right {
+  font-size: small;
+  padding: 0px 7px;
+}
+
+@media only screen and (max-width: 800px) {
+  .images-container .main-img img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+  }
+  .images-container .secondary-images {
+    display: none !important;
+  }
+  .comments {
+    display: flex;
+    flex-direction: column;
+  }
+  .comments .rating-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .comments .rating-box .right-rating-box .rating-box,
+.comments .rating-box .left-rating-box .rating-box {
+    gap: 20px;
+  }
+  .people-comments .peoples {
+    flex-direction: column !important;
+    padding: 10px;
+    gap: 20px !important;
+  }
+  .hosted-by-haris .info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+  .left-and-right-sections {
+    display: flex;
+    flex-direction: column !important;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+  }
+  header .header-container {
+    width: 80%;
+  }
+  header .header-container .menu .host {
+    display: none;
+  }
+  .card {
+    height: auto;
+  }
+  .card .container-box-card {
+    height: auto;
+    display: flex;
+  }
+  .haris-container {
+    width: 100%;
+  }
+  .calendar {
+    width: 100%;
+  }
+  .calendar .table-calendar .table-calendar-2 {
+    display: none;
+  }
+  .place-offers-container {
+    width: 100%;
+  }
+  .place-offers-container .left-section {
+    width: 100%;
+  }
+  .place-offers-container .left-section .left-members {
+    width: 100%;
+  }
+  .place-offers-container .left-section .right-members {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
